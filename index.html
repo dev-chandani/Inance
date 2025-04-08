@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        nav{
+            height: 80px;
+            width: 100%;
+            border: 2px solid white;
+            background-color: black;
+        }
+        .topleft{
+            height: 100%;
+            width: 50%;
+           float: left;
+           /* border: 2px solid white; */
+        }
+        .topleft p{
+            color: white;
+            padding-top: 30px;
+            font-size: 22px;
+        }
+        .topleft .ri-phone-fill{
+            color: orange;
+            float: left;
+            padding-top: 30px;
+            margin-left: 100px;
+            font-size: 25px;
+        }
+        .topright{
+            height: 100%;
+            width: 50%;
+            float: left;
+            /* border: 2px solid white; */
+        }
+        .topright p{
+            color: white;
+            padding-top: 30px;
+            font-size: 22px;
+        }
+        .ri-mail-line{
+            color: orange;
+            font-size: 25px;
+            float: left;
+            padding-top: 30px;
+            margin-left: 300px;
+            font-size: 25px;
+        }
+        header{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(183, 183, 245);
+        }
+        .headtop{
+            height: 20%;
+            /* width: 100%;border: 2px solid; */
+        }
+        .headtop h2{
+            color:blue;
+            padding-top: 55px;
+            margin-left: 100px;
+        }
+        .headbottom {
+            height: 80%;
+            width: 100%;
+        }
+        .headbottomleft{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid; */
+            padding-left: 150px;
+            float: left;
+        }
+        .headbottomright{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid; */
+            /* padding-left: 150px; */
+            float: left;
+        }
+        .headbottomleft h1{
+            font-size: 40px;
+            padding-top: 50px;
+        }
+        .headbottomleft p{
+            font-size: 20px;
+            padding-top: 20px;
+            margin-right: 100px;
+        }
+        .headbottomleft button{
+            margin-top: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            height: 45px;
+            width: 150px;
+            background-color:orangered;
+           
+        }
+        .headbottomright img{
+          margin-top: -100px;
+          margin-left: 100px;
+          height: 600px;
+          width: 500px;
+        }
+        
+        main{
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid; */
+        }
+        .maintop{
+            width: 100%;
+            height: 35%;
+            /* border: 2px solid; */
+        }
+        .repair{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            float: left;
+            margin-top: 30px;
+            margin-left: 400px;
+            text-align: center;
+            padding-top: 160px;
+            font-size: 23px;
+        }
+        .repair:hover{
+            height: 210px;
+            width: 210px;
+            border: 4px solid rgb(113, 103, 103);
+        }
+        .improve{
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid; */
+            float: left;
+            margin-top: 30px;
+            margin-left: 100px;
+            text-align: center;
+            /* padding-top: 150px; */
+            font-size: 23px;
+            background-color: orangered;
+        }
+        
+        
+        .ri-home-gear-line{
+            color: white;
+            font-size: 150px;
+        }
+        .maintain{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            float: left;
+            margin-top: 30px;
+            margin-left: 100px;
+            text-align: center;
+            /* padding-top: 150px; */
+            font-size: 23px;
+        }
+        .ri-home-3-line{
+            font-size: 150px;
+            color: black;
+        }
+        .maintain:hover{
+            height: 210px;
+            width: 210px;
+            border: 4px solid rgb(113, 103, 103);
+        }
+        .mainbottom{
+            height: 65%;
+            width: 100%;
+        }
+        .mainbottomleft{
+            height: 100%;
+            width: 50%;
+            float: left;
+            /* border: 2px solid; */
+        }
+        
+        
+        .mainbottomleft h1{
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+        .mainbottomleft p{
+            margin-top: 20px;
+            margin-left: 150px;
+            font-size: 20px;
+            word-spacing: 15px;
+            text-align: left;
+            margin-right: 50px;
+        }
+        .mainbottomleft button{
+            height: 45px;
+            width: 180px;
+            color: white;
+            background-color: blue;
+            font-size: 18px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        .mainbottomright{
+            height: 100%;
+            width: 50%;
+            float: left;
+            /* border: 2px solid; */
+        }
+        .mainbottomright img{
+            height: 380px;
+            width: 530px;
+            /* border: 2px solid; */
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        section{
+            height: 100vh;
+            background-color: rgb(183, 183, 245) ;
+        }
+        .sectleft{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .sectleft img{
+            height: 600px;
+            width: 600px;
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        .sectright{
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        .sectright h1{
+            color: blue;
+            margin-top: 150px;
+            font-size: 40px;
+            word-spacing: 15px;
+        }
+        .sectright p{
+            font-size: 20px;
+            margin-top: 30px;
+            text-align: left;
+            margin-right: 150px;
+            line-height: 30px;
+        }
+        .sectright button{
+            height: 45px;
+            width: 180px;
+            color: white;
+            background-color: orangered;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .services{
+            height: 100vh;
+            width: 100vw;
+        }
+        .servheading{
+            height: 20%;
+            width: 100%;
+            text-align: center;
+            padding-top: 80px;
+            font-size: 30px;
+        }
+        .servbottom{
+            height: 80%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .maintainance{
+            margin-top: 80px;
+            height: 360px;
+            width: 300px;
+            border:  4px solid rgb(113, 103, 103);
+            float: left;
+            margin-left: 200px;
+        }
+        .electrical{
+            margin-top: 80px;
+            height: 360px;
+            width: 300px;
+            border:  4px solid rgb(113, 103, 103);
+            float: left;
+            margin-left: 120px;
+        }
+        .plumbing{
+            margin-top: 80px;
+            height: 360px;
+            width: 300px;
+            border: 4px solid rgb(113, 103, 103);
+            float: left;
+            margin-left: 120px;
+        }
+        .services button{
+            height: 45px;
+            width: 180px;
+            color: white;
+            background-color: blue;
+            font-size: 18px;
+            float: left;
+            margin-top: 80px;
+            margin-left: 680px;
+        }
+        .servbottom h2{
+            text-align: center;
+            
+        }
+        .servbottom p{
+            margin-top: 20px;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .ri-hand-coin-line{
+            text-align: center;
+            font-size: 130px;
+            padding-top: 200px;
+            margin-left: 90px;
+        }
+        .ri-lightbulb-flash-line{
+            text-align: center;
+            font-size: 130px;
+            padding-top: 200px;
+            margin-left: 90px;
+        }
+        .ri-hammer-line{
+            text-align: center;
+            font-size: 130px;
+            padding-top: 200px;
+            margin-left: 90px;
+        }
+        .clients{
+            height: 100vh;
+            width: 100vw;
+        }
+        .clientstop{
+            height: 20%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .clientstop h1{
+            text-align: center;
+            padding-top: 100px;
+            font-size: 50px;
+        }
+        .cientsbottom{
+            height: 80%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .cientsbottomleft{
+            height: 400px;
+            width: 500px;
+            border: 2px solid;
+            float: left;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .cientsbottomright{
+            height: 400px;
+            width: 500px;
+            border: 2px solid;
+            float: left;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .lefttop{
+            height: 60%;
+            width: 100%;
+            /* border:2px solid ; */
+        }
+        .leftbottom{
+            height: 40%;
+            width: 100%;
+            /* border:2px solid ; */
+        }
+        .leftbottom p{
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .lefttopleft{
+            height: 100%;
+            width: 35%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .lefttopleft img{
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        .lefttopright{
+            height: 100%;
+            width: 65%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .lefttopright p{
+            font-size: 25px;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+        .starcomma{
+            height: 80px;
+            width: 100%;
+        }
+        .star{
+            height: 100%;
+            width: 70%;
+            float: left;
+            /* border: 2px solid; */
+            margin-top: 10px;
+        }
+        .ri-star-fill{
+            font-size: 22px;
+            color: orange;
+            padding-left: 20px;
+        }
+        .comma{
+            height: 100%;
+            width: 30%;
+            float: left;
+            /* border: 2px solid; */
+           font-size: 35px;
+           padding-left: 50px;
+           margin-top: -20px;
+        }
+
+        footer{
+            height: 100vh;
+            width: 100vw;
+        }
+        .footerleft{
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        .footerright{
+            height: 100%;
+            width: 50%;
+            float: left;
+            /* border: 2px solid; */
+            float: left;
+        }
+        form{
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid; */
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+        form h1{
+            /* padding-top: 20px; */
+            font-size: 40px;
+        }
+        .name{
+            height: 50px;
+            width: 400px;
+            border-radius: 5px;
+            margin-top: 40px;
+            /* margin-left: 50px; */
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        .phoneno{
+            height: 50px;
+            width: 400px;
+            border-radius: 5px;
+            margin-top: 15px;
+            /* margin-left: 50px; */
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        .email{
+            height: 50px;
+            width: 400px;
+            border-radius: 5px;
+            margin-top: 15px;
+            /* margin-left: 50px; */
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        .msg{
+            height: 150px;
+            width:400px;
+            border-radius: 5px;
+            margin-top: 15px;
+            /* margin-left: 50px; */
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        button{
+            height: 40px;
+            color: white;
+            background-color: blue;
+            width: 200px;
+            margin-top:25px;
+            font-size: 18px;
+        }
+        .frame{ 
+            margin-top: 70px;
+            margin-left: 50px;
+            height: 658px;
+            width: 608px;
+            border: 4px solid ;
+        }
+        iframe{
+            border: 4px solid black;
+        }
+        .framebox{
+            height: 300px;
+            width: 580px;
+            background-color: white;
+            position: relative;
+            bottom:643px;
+            left: 10px;
+            padding-left: 60px;
+        }
+        .framebox h3{
+            padding-top: 50px;
+            font-size: 50px;
+        }
+        .framebox p{
+            font-size: 25px;
+            padding-top: 20px;
+        }
+        .framebox span{
+            color: gray;
+            font-size: 25px;
+            margin-right: 25px;
+        }
+        button{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+  <nav>
+        <div class="topleft">
+            <i class="ri-phone-fill"></i>
+            <p> Call:+01 12345678990</p>
+        </div>
+        <div class="topright">
+            <i class="ri-mail-line"></i>
+            <p>Email:mail@domain.com</p>
+        </div>
+ </nav>
+
+ <header>
+    <div class="headtop">
+        <h2>INANCE</h2>
+
+    </div>
+    <div class="headbottom">
+        <div class="headbottomleft">
+            <h1>Repair and <br> Maintainance <br> Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae possimus eveniet quis deserunt ex nam blanditiis sed rem fugiat unde aut asperiores, praesentium voluptas eligendi ipsa perspiciatis iste facilis adipisci quod impedit tempore nobis obcaecati! Unde reiciendis perspiciatis nemo?</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="headbottomright">
+            <img src="slider-img.png" alt="">
+        </div>
+    </div>
+ </header>
+
+ <main>
+    <div class="maintop">
+        <div class="repair">
+            <p>REPAIR</p>
+        </div>
+        <div class="improve">
+            <i class="ri-home-gear-line"></i>
+            <p>IMPROVE</p>
+        </div>
+        <div class="maintain">
+            <i class="ri-home-3-line"></i>
+            <p>MAINTAIN</p>
+        </div>
+    </div>
+    <div class="mainbottom">
+        <div class="mainbottomleft">
+            <h1>ABOUT US</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore beatae adipisci illum odit, ipsum voluptatum reprehenderit id fugit placeat vero dolorem ex. Accusantium dolorum excepturi voluptate at? Molestiae debitis rerum voluptas! Ut nesciunt fugit ipsa, voluptatum sapiente enim unde, provident dolorem, distinctio doloribus corporis consequuntur! Dolore animi praesentium quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex provident at nesciunt corrupti, pariatur inventore similique facere tempore consequatur atque quam id illo ipsam velit. Repellendus rem tempora ut assumenda!</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="mainbottomright">
+            <img src="approan.jpg" alt="">
+        </div>
+    </div>
+ </main>
+
+ <section>
+    <div class="sectleft">
+        <img src="show.png" alt="">
+    </div>
+    <div class="sectright">
+        <h1>WE PROVIDE <br>PROFESSIONAL  <br>
+            HOME SERVICES.</h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum culpa neque esse unde a, adipisci amet. Quibusdam ipsum officia nulla ipsa in velit, adipisci mollitia quae, fugit nesciunt maxime? Voluptatem quas sit perferendis, iure sequi odio deserunt molestiae at, itaque voluptates voluptas aliquid obcaecati laudantium omnis explicabo aut numquam cum quis porro vel. Non ut dolore, tempore asperiores debitis perferendis. Dolorem, consectetur. Ullam voluptate, error quae quisquam dolor quia, maxime nam illo reprehenderit dicta vitae odio aliquam, tempore cum placeat distinctio ad? Voluptate incidunt at fugiat suscipit enim pariatur voluptas natus dolor quidem distinctio reiciendis magnam, amet quas ducimus ea!</P>
+            <button>READ MORE</button>
+    </div>
+ </section>
+
+ <div class="services">
+    <div class="servheading">
+        <h1>OUR SERVICES</h1>
+    </div>
+    <div class="servbottom">
+             <div class="maintainance">
+                <i class="ri-hand-coin-line"></i>
+                <h2>Maintainance</h2>
+                
+                <p>Lorem ipsum dolor sit amet uuuuu consectetur adipisicing elit. Ipsum et rerum sint veniam ipsa voluptatum. Reiciendis dolores odio perferendis voluptatum </p>
+             </div>
+            <div class="electrical">
+                <i class="ri-lightbulb-flash-line"></i>
+                <h2>Electrical</h2>
+                <p>Lorem ipsum dolor sit amet uuuuu consectetur adipisicing elit. Ipsum et rerum sint veniam ipsa voluptatum. Reiciendis dolores odio perferendis voluptatum </p>
+            </div>
+            <div class="plumbing">
+                <i class="ri-hammer-line"></i>
+                <h2>Plumbing</h2>
+                <p>Lorem ipsum dolor sit amet uuuuu consectetur adipisicing elit. Ipsum et rerum sint veniam ipsa voluptatum. Reiciendis dolores odio perferendis voluptatum </p>
+            </div>
+            <button>VIEW MORE</button>
+    </div>
+ </div>
+
+ <div class="clients">
+    <div class="clientstop">
+        <h1>WHAT OUR CLIENTS SAY</h1>
+    </div>
+    <div class="cientsbottom">
+        <div class="cientsbottomleft">
+            <div class="lefttop">
+                <div class="lefttopleft">
+                    <img src="client-2.jpg" alt="">
+                </div>
+                <div class="lefttopright">
+                    <p>Jorch morik</p>
+                    <div class="starcomma">
+                        <div class="star">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <div class="comma">
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftbottom">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem voluptates eveniet quo odit impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla laudantium nam reprehenderit doloremque ullam possimus recusandae quaerat? Neque, a.</p>
+            </div>
+        </div>
+        <div class="cientsbottomright">
+            <div class="lefttop">
+                <div class="lefttopleft">
+                    <img src="client-2.jpg" alt="">
+                </div>
+                <div class="lefttopright">
+                    <p>Jorch morik</p>
+                    <div class="starcomma">
+                        <div class="star">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <div class="comma">
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftbottom">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem voluptates eveniet quo odit impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla laudantium nam reprehenderit doloremque ullam possimus recusandae quaerat? Neque, a.</p>
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+ <footer>
+    <div class="footerleft">
+        <form action="">
+            <h1>CONTACT US</h1>
+            <input type="text" placeholder="Name" class="name">
+
+            <input type="text" placeholder="Phone Number" class="phoneno">
+
+            <input type="text" placeholder="Email" class="email">
+
+            <input type="text" placeholder="Message" class="msg">
+
+            <button>SEND</button>
+        </form>
+    </div>
+    <div class="footerright">
+        <div class="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28762.89610429301!2d85.20832401259396!3d25.69243538437955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5c1f0e3e9d01%3A0x34ac550b84f13ad3!2z4KS54KS-4KSc4KWA4KSq4KWB4KSwLCDgpKzgpL_gpLngpL7gpLA!5e0!3m2!1shi!2sin!4v1723784593897!5m2!1shi!2sin" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="4">
+                
+            </iframe>
+            
+            <div class="framebox">
+                <h3>Google</h3>
+                <p>This page cant't load Google Maps <br> correctly.</p>
+                <div class="do">
+                    <span>Do you own this website?</span>
+                    <button>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
